@@ -12,6 +12,10 @@
 		17AC815F22465B8400063116 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 17AC815D22465B8400063116 /* Main.storyboard */; };
 		17AC816122465B8700063116 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 17AC816022465B8700063116 /* Assets.xcassets */; };
 		17AC816422465B8700063116 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 17AC816222465B8700063116 /* LaunchScreen.storyboard */; };
+		17AC816C2246627D00063116 /* SoundViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17AC816B2246627D00063116 /* SoundViewController.swift */; };
+		17AC816F2246641C00063116 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 17AC816E2246641C00063116 /* AVFoundation.framework */; };
+		17AC8172224665E800063116 /* callMusic.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 17AC8170224665E800063116 /* callMusic.mp3 */; };
+		17AC8173224665E800063116 /* baby.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 17AC8171224665E800063116 /* baby.mp3 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +26,10 @@
 		17AC816022465B8700063116 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		17AC816322465B8700063116 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		17AC816522465B8700063116 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		17AC816B2246627D00063116 /* SoundViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundViewController.swift; sourceTree = "<group>"; };
+		17AC816E2246641C00063116 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		17AC8170224665E800063116 /* callMusic.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = callMusic.mp3; sourceTree = "<group>"; };
+		17AC8171224665E800063116 /* baby.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = baby.mp3; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +37,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				17AC816F2246641C00063116 /* AVFoundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +49,7 @@
 			children = (
 				17AC815822465B8300063116 /* SwiftMousouLINE1 */,
 				17AC815722465B8300063116 /* Products */,
+				17AC816D2246641B00063116 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,14 +64,25 @@
 		17AC815822465B8300063116 /* SwiftMousouLINE1 */ = {
 			isa = PBXGroup;
 			children = (
+				17AC8171224665E800063116 /* baby.mp3 */,
+				17AC8170224665E800063116 /* callMusic.mp3 */,
 				17AC815922465B8400063116 /* AppDelegate.swift */,
 				17AC815B22465B8400063116 /* ViewController.swift */,
 				17AC815D22465B8400063116 /* Main.storyboard */,
 				17AC816022465B8700063116 /* Assets.xcassets */,
 				17AC816222465B8700063116 /* LaunchScreen.storyboard */,
 				17AC816522465B8700063116 /* Info.plist */,
+				17AC816B2246627D00063116 /* SoundViewController.swift */,
 			);
 			path = SwiftMousouLINE1;
+			sourceTree = "<group>";
+		};
+		17AC816D2246641B00063116 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				17AC816E2246641C00063116 /* AVFoundation.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -122,6 +143,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				17AC8172224665E800063116 /* callMusic.mp3 in Resources */,
+				17AC8173224665E800063116 /* baby.mp3 in Resources */,
 				17AC816422465B8700063116 /* LaunchScreen.storyboard in Resources */,
 				17AC816122465B8700063116 /* Assets.xcassets in Resources */,
 				17AC815F22465B8400063116 /* Main.storyboard in Resources */,
@@ -136,6 +159,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				17AC815C22465B8400063116 /* ViewController.swift in Sources */,
+				17AC816C2246627D00063116 /* SoundViewController.swift in Sources */,
 				17AC815A22465B8400063116 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
